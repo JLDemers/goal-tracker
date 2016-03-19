@@ -6,7 +6,8 @@
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <title>Home Page</title>
 </head>
-<body>Art party venmo tacos hella next level, photo booth
+<body>
+	<p>Art party venmo tacos hella next level, photo booth</p>
 	shoreditch VHS YOLO tote bag mumblecore stumptown semiotics. Lomo
 	messenger bag gochujang, actually offal man bun bicycle rights
 	distillery everyday carry asymmetrical try-hard. Twee shabby chic
