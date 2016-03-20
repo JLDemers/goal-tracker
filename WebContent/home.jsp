@@ -7,7 +7,7 @@
 <title>Home Page</title>
 </head>
 <body>
-	<h3>Web App deployed from Maven test</h3>
+	<h3>Web App deployed from Maven test1</h3>
 	
 	<p>Art party venmo tacos hella next level, photo booth</p>
 	shoreditch VHS YOLO tote bag mumblecore stumptown semiotics. Lomo
