@@ -11,10 +11,9 @@
 <body>
 	<h3>Task Champ</h3>
 
-Add New Task
-View Current Task
-View Completed Task
-
+<p><a href="${pageContext.request.contextPath}/tasks">View Current Task</a></p>
+<p><a href="${pageContext.request.contextPath}/createtask">Add Task</a></p>
+<p><a href="${pageContext.request.contextPath}/tasks">View Completed Task</a></p>
 
 
 </body>

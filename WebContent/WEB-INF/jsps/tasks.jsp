@@ -9,7 +9,7 @@
 </head>
 <body>
 <c:forEach var="task" items="${task}">
-<p> <c:out value="task"></c:out> </p>
+<p> <c:out value="${task}"></c:out> </p>
 </c:forEach>
 </body>
 </html>
