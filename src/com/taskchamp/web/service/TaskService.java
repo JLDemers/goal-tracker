@@ -18,8 +18,6 @@ public class TaskService {
 		this.taskDao = taskDao;
 	}
 
-
-
 	public List<Task> getAllTasks() {
 		return taskDao.getAllTasks();
 	}

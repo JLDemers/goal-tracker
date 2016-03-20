@@ -11,16 +11,14 @@ public class Task {
 
 	}
 
-	public Task(String taskId, String title, String details,
-			boolean taskComplete) {
+	public Task(String taskId, String title, String details, boolean taskComplete) {
 		this.taskId = taskId;
 		this.title = title;
 		this.title = title;
 		this.taskComplete = taskComplete;
 	}
 
-	public Task(int id, String taskId, String title, String details,
-			boolean taskComplete) {
+	public Task(int id, String taskId, String title, String details, boolean taskComplete) {
 		super();
 		this.id = id;
 		this.taskId = taskId;
