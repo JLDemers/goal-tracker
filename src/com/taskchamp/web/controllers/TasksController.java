@@ -35,4 +35,10 @@ public class TasksController {
 				
 		return "createtask";
 	}
+	
+	@RequestMapping("/docreate")
+	public String doCreate(Model model) {
+				
+		return showTasks(model);
+	}
 }
