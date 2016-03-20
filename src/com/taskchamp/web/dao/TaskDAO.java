@@ -28,7 +28,7 @@ public class TaskDAO {
 		this.jdbc = new NamedParameterJdbcTemplate(jdbc);
 	}
 
-	public List<Task> gettasks() {
+	public List<Task> getAllTasks() {
 
 		return jdbc.query("select * from tasks", new RowMapper<Task>() {
 
