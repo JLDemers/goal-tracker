@@ -35,7 +35,8 @@ public class TasksController {
 	
 	@RequestMapping("/createtask")
 	public String createTask(Model model) {
-				
+		model.addAttribute("task", new Task());		
+		
 		return "createtask";
 	}
 	
