@@ -37,8 +37,8 @@ public class TasksController {
 	}
 	
 	@RequestMapping("/docreate")
-	public String doCreate(Model model) {
-				
+	public String doCreate(Model model, Task task) {
+		System.out.println(task);		
 		return showTasks(model);
 	}
 }

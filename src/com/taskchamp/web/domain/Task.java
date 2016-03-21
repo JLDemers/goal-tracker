@@ -2,7 +2,7 @@ package com.taskchamp.web.domain;
 
 public class Task {
 	private int id;
-	private String taskId;
+	private String token;
 	private String title;
 	private String details;
 	private boolean taskComplete;
@@ -11,19 +11,19 @@ public class Task {
 
 	}
 
-	public Task(String taskId, String title, String details, boolean taskComplete) {
-		this.taskId = taskId;
+	public Task(String token, String title, String details, boolean taskComplete) {
+		this.token = token;
 		this.title = title;
-		this.title = title;
+		this.details = details;
 		this.taskComplete = taskComplete;
 	}
 
-	public Task(int id, String taskId, String title, String details, boolean taskComplete) {
+	public Task(int id, String token, String title, String details, boolean taskComplete) {
 		super();
 		this.id = id;
-		this.taskId = taskId;
+		this.token = token;
 		this.title = title;
-		this.title = title;
+		this.details = details;
 		this.taskComplete = taskComplete;
 	}
 
@@ -35,12 +35,12 @@ public class Task {
 		this.id = id;
 	}
 
-	public String getTaskId() {
-		return taskId;
+	public String getToken() {
+		return token;
 	}
 
-	public void setTaskId(String taskId) {
-		this.taskId = taskId;
+	public void setToken(String token) {
+		this.token = token;
 	}
 
 	public String getTitle() {
@@ -69,7 +69,7 @@ public class Task {
 
 	@Override
 	public String toString() {
-		return "Tasks [id=" + id + ", taskId=" + taskId + ", title=" + title
+		return "Tasks [id=" + id + ", token=" + token + ", title=" + title
 				+ ", details=" + details + ", taskComplete=" + taskComplete
 				+ "]";
 	}

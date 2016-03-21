@@ -36,7 +36,7 @@ public class TaskDAO {
 				Task task = new Task();
 
 				task.setId(rs.getInt("id"));
-				task.setTaskId(rs.getString("task_id"));
+				task.setToken(rs.getString("token"));
 				task.setTitle(rs.getString("title"));
 				task.setDetails(rs.getString("details"));
 				task.setTaskComplete(rs.getBoolean("task_complete"));
@@ -46,6 +46,8 @@ public class TaskDAO {
 
 		});
 	}
+	
+	//TODO: Get certain tasks (Not Complete / Complete)
 	
 //	public boolean update(Task task) {
 //		BeanPropertySqlParameterSource params = new BeanPropertySqlParameterSource(task);

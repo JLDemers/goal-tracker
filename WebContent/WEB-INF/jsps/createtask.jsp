@@ -9,13 +9,13 @@
 <body>
 	<h3>Under Construction - Adding an new Task</h3>
 
-	<form method="get" action="${pageContext.request.contextPath}/docreate">
+	<form method="post" action="${pageContext.request.contextPath}/docreate">
 		<table>
 			<tr>
 				<td>Title: </td><td><input name="title" type="text"/></td>
 			</tr>
 			<tr>
-				<td>Details: </td><td><textarea rows="10" cols="20"></textarea></td>
+				<td>Details: </td><td><textarea name="details" rows="10" cols="20"></textarea></td>
 			</tr>
 			<tr>
 				<td></td><td><input value="Add Task" type="submit"></td>
