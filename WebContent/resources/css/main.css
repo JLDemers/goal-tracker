@@ -18,6 +18,7 @@ textarea {
 .label {
 	text-align: right;
 	vertical-align: top;
+	color: blue;
 }
 
 .control {

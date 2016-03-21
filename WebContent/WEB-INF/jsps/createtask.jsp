@@ -3,6 +3,7 @@
 	<%@ taglib prefix="sf" uri="http://www.springframework.org/tags/form" %>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
+<link href="${pageContext.request.contextPath}/static/css/main.css" type="text/css" rel="stylesheet"/>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <title>Insert title here</title>
@@ -11,12 +12,12 @@
 	<h3>Under Construction - Adding an new Task</h3>
 
 	<sf:form method="post" action="${pageContext.request.contextPath}/docreate" commandName="task">
-		<table>
+		<table class="formtable">
 			<tr>
-				<td>Title: </td><td><sf:input name="title" path="title" type="text"/></td>
+				<td class="label">Title: </td><td><sf:input name="title" path="title" type="text"/><br/><sf:errors path="title" cssClass="error"></sf:errors></td>
 			</tr>
 			<tr>
-				<td>Details: </td><td><sf:textarea name="details" path="details" rows="10" cols="20"></sf:textarea></td>
+				<td class="label">Details: </td><td><sf:textarea name="details" path="details" rows="10" cols="20"></sf:textarea><br/><sf:errors path="details" cssClass="error"></sf:errors></td>
 			</tr>
 			<tr>
 				<td></td><td><input value="Add Task" type="submit"></td>
