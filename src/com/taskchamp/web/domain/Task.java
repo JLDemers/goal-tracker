@@ -1,9 +1,15 @@
 package com.taskchamp.web.domain;
 
+import javax.validation.constraints.Size;
+
 public class Task {
 	private int id;
 	private String token;
+	
+	@Size(min=1, max=100, message="Title must be between 1 and 100 characters.")
 	private String title;
+	
+	@Size(min=1, max=255, message="Details must be bewteen 1 and 255 characters.")
 	private String details;
 	private boolean taskComplete;
 

@@ -2,9 +2,12 @@ package com.taskchamp.web.controllers;
 
 import java.util.List;
 
+import javax.validation.Valid;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 import com.taskchamp.web.domain.Task;
@@ -37,8 +40,12 @@ public class TasksController {
 	}
 	
 	@RequestMapping("/docreate")
-	public String doCreate(Model model, Task task) {
-		System.out.println(task);		
+	public String doCreate(Model model, @Valid Task task, BindingResult result) {
+		
+		if(result.hasErrors()){
+			return "createtask";
+		}
+		
 		return showTasks(model);
 	}
 }
